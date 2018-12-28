@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_block:92067f0b-5584-47ff-87f0-dc02bdd17577'
+  module:
+    - block_content
+    - block_visibility_groups
+    - term_condition
+  theme:
+    - portfolio
+id: primaryfooter
+theme: portfolio
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:92067f0b-5584-47ff-87f0-dc02bdd17577'
+settings:
+  id: 'block_content:92067f0b-5584-47ff-87f0-dc02bdd17577'
+  label: 'Primary Footer'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping: {  }

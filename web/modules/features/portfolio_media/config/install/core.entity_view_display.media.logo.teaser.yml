@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.teaser
+    - field.field.media.logo.image
+    - media.type.logo
+    - responsive_image.styles.retina_logo_color
+  module:
+    - responsive_image
+id: media.logo.teaser
+targetEntityType: media
+bundle: logo
+mode: teaser
+content:
+  image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: retina_logo_color
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shared_body_content
+    - node.type.article
+  module:
+    - entity_reference_revisions
+id: node.article.field_shared_body_content
+field_name: field_shared_body_content
+entity_type: node
+bundle: article
+label: 'Body Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      cl_bodytext:
+        weight: 3
+        enabled: false
+      cl_link:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

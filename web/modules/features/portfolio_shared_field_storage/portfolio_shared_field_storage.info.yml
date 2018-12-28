@@ -1,0 +1,16 @@
+name: 'Shared Field Storage'
+description: 'Field Storage definitions for shared fields'
+type: module
+core: 8.x
+dependencies:
+  - crop
+  - entity_reference_revisions
+  - field
+  - media
+  - media_library
+  - node
+  - paragraphs
+  - path
+  - user
+version: 8.x-1.0
+package: Portfolio

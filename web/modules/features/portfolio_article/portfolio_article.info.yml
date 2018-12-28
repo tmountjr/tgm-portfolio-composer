@@ -1,0 +1,28 @@
+name: Article
+description: 'Provides Article content type and related configuration. Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - block_visibility_groups
+  - draggableviews
+  - entity_reference_revisions
+  - field
+  - media_library
+  - menu_ui
+  - node
+  - paragraphs
+  - path
+  - pathauto
+  - portfolio_media
+  - portfolio_paragraphs
+  - portfolio_shared_field_storage
+  - portfolio_vocabulary
+  - rdf
+  - simple_sitemap
+  - taxonomy
+  - term_condition
+  - user
+  - views
+version: 8.x-1.4
+package: Portfolio

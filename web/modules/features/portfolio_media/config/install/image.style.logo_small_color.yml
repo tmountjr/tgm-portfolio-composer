@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: logo_small_color
+label: 'Logo Small (Color)'
+effects:
+  942bcf8e-8b39-4718-b711-a190440a0624:
+    uuid: 942bcf8e-8b39-4718-b711-a190440a0624
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 100
+      upscale: false

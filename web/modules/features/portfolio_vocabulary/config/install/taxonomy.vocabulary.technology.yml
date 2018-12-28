@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Technology
+vid: technology
+description: 'The technology used in a project.'
+hierarchy: 0
+weight: 0

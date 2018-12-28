@@ -1,0 +1,15 @@
+name: Blocks
+description: 'Custom blocks'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - block_content
+  - block_visibility_groups
+  - entity_reference_revisions
+  - field
+  - paragraphs
+  - system
+  - term_condition
+version: 8.x-1.0
+package: Portfolio

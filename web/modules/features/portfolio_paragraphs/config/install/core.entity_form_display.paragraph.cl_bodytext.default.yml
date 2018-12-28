@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cl_bodytext.field_cl_bodytext_bodytext
+    - paragraphs.paragraphs_type.cl_bodytext
+  module:
+    - text
+id: paragraph.cl_bodytext.default
+targetEntityType: paragraph
+bundle: cl_bodytext
+mode: default
+content:
+  field_cl_bodytext_bodytext:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

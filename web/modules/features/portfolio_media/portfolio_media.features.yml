@@ -1,0 +1,7 @@
+bundle: portfolio
+excluded:
+  - core.entity_form_display.node.project.default
+  - core.entity_view_display.node.project.default
+  - core.entity_view_display.node.project.teaser
+  - field.field.node.project.field_project_images
+required: true

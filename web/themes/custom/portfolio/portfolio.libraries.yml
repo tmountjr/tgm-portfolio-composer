@@ -1,0 +1,52 @@
+portfolio.modernizr:
+  remote: https://github.com/Modernizr/Modernizr
+  version: 2.8.3
+  license:
+    name: MIT
+    url: https://modernizr.com/license/
+  js:
+    '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js':
+      type: external
+      minified: true
+
+portfolio.fonts:
+  remote: https://fonts.google.com
+  license:
+    name: MIT
+    url: https://developers.google.com/fonts/faq
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Martel+Sans:400,200,900':
+        type: external
+        minified: true
+
+portfolio.pure:
+  remote: https://purecss.io
+  version: 0.6.0
+  license:
+    name: BSD
+    url: https://github.com/pure-css/pure-site/blob/master/LICENSE.md
+  css:
+    theme:
+      '//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css':
+        type: external
+        minified: true
+      '//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css':
+        type: external
+        minified: true
+
+portfolio.fontawesome:
+  remote: http://fontawesome.io
+  version: 4.6.3
+  license:
+    name: CC
+    url: https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt
+  js:
+    'https://use.fontawesome.com/2d33f45fdb.js':
+      type: external
+      minified: true
+
+portfolio.custom:
+  css:
+    theme:
+      css/app.css: {}

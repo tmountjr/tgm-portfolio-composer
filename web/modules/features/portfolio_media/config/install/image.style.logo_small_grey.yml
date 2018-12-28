@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies: {  }
+name: logo_small_grey
+label: 'Logo Small (Grey)'
+effects:
+  c81c9d8f-98b2-4fac-ad7d-58af72333b1c:
+    uuid: c81c9d8f-98b2-4fac-ad7d-58af72333b1c
+    id: image_desaturate
+    weight: 1
+    data: {  }
+  3522e102-7426-4644-8789-e767fe766a29:
+    uuid: 3522e102-7426-4644-8789-e767fe766a29
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 100
+      upscale: false

@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - site-menu
+    parent: 'site-menu:'
+name: Project
+type: project
+description: 'Example of previous project work.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
