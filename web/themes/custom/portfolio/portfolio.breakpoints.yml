@@ -1,0 +1,13 @@
+portfolio.narrow:
+  label: narrow
+  mediaQuery: '(min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+portfolio.wide:
+  label: wide
+  mediaQuery: 'all and (min-width: 48em)'
+  weight: 2
+  multipliers:
+    - 1x

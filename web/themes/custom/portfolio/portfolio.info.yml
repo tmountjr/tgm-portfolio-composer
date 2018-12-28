@@ -1,0 +1,25 @@
+name: Portfolio
+type: theme
+description: Portfolio Theme based on Stark
+core: 8.x
+
+# Defines the base theme
+base theme: stark
+
+# Libraries
+libraries:
+  - portfolio/portfolio.modernizr
+  - portfolio/portfolio.fonts
+  - portfolio/portfolio.pure
+  - portfolio/portfolio.fontawesome
+  - portfolio/portfolio.custom
+
+# Regions
+regions:
+  header: Header
+  sidebar_top: Sidebar top
+  sidebar_main: Sidebar main
+  footer: Footer
+  content: Content
+  content_bottom: Content bottom
+  hidden: Hidden Blocks (not printed out)

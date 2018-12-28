@@ -1,0 +1,4 @@
+bundle: portfolio
+excluded:
+  - field.storage.node.body
+required: true

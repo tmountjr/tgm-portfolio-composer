@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_social_link_profile_link
+    - paragraphs.paragraphs_type.cl_social_link
+  module:
+    - link
+id: paragraph.cl_social_link.field_p_social_link_profile_link
+field_name: field_p_social_link_profile_link
+entity_type: paragraph
+bundle: cl_social_link
+label: 'Profile Link'
+description: 'Link to the social profile.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter for blocks.
+ */
+function portfolio_theme_suggestions_block_alter(&$suggestions, $variables) {
+  // Load theme suggestions for blocks from parent theme.
+  foreach ($suggestions as &$suggestion) {
+    $suggestion = str_replace('portfolio_', 'stark_', $suggestion);
+  }
+
+  $block = $variables['elements'];
+  $blockType = $block['#configuration']['provider'];
+  if ($blockType == "block_content") {
+    $bundle = $block['content']['#block_content']->bundle();
+    array_splice($suggestions, 2, 0, 'block__' . $bundle);
+  }
+}
+
+/**
+ * Implements template_preprocess_views_view_fields().
+ */
+function portfolio_preprocess_views_view_fields(&$vars) {
+  $view = $vars['view'];
+
+  if ($view->id() == 'terms_in_use' && $view->current_display == 'tags_list') {
+    $row = $vars['row'];
+    $term = $row->_entity;
+
+    $vars['term_url_object'] = $term->toUrl();
+    $vars['term_url_string'] = $vars['term_url_object']->toString();
+    $vars['term_label'] = $term->getName();
+    $vars['term_count'] = $row->field_article_tags_taxonomy_term_field_data_nid;
+  }
+
+}

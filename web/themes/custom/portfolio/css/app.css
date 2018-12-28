@@ -1,0 +1,203 @@
+.footer ul, .tags ul, #block-portfolio-local-tasks ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+section.project, section.contact, section.fullpage {
+  margin-bottom: 70px;
+  padding-bottom: 1em; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  font-family: 'Martel Sans', Ariel, sans-serif;
+  font-weight: 400; }
+
+html,
+body {
+  width: 100%;
+  min-width: 100%; }
+
+.sidebar,
+.content {
+  padding: 0 1em; }
+
+a.brand {
+  text-decoration: none; }
+
+h1 {
+  font-size: 1.5em; }
+  h1 .first-name {
+    font-weight: 200; }
+  h1 .last-name {
+    font-weight: 900; }
+  @media (min-width: 48em) {
+    h1 {
+      font-size: 2em; } }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  background-color: rgba(245, 245, 245, 0.95); }
+  @media (min-width: 48em) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      height: 100%; } }
+
+.content {
+  margin-top: 100px; }
+  .content a {
+    color: #af6c0b; }
+    .content a:active, .content a:hover {
+      color: #6b3f00; }
+    .content a:visited {
+      color: #100d65; }
+  @media (min-width: 48em) {
+    .content {
+      margin-left: 25%;
+      margin-top: 1.67em; } }
+
+#footer-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
+.footer {
+  padding: 1em 0;
+  background-color: rgba(245, 245, 245, 0.95); }
+  .footer ul {
+    text-align: center; }
+  .footer li {
+    display: inline-block;
+    padding: 0 1em; }
+  @media (min-width: 48em) {
+    .footer {
+      background-color: rgba(255, 255, 255, 0.95); } }
+
+section {
+  min-height: calc(100vh - 100px - 1.25em); }
+  section.fullpage {
+    margin-bottom: 100px; }
+  @media (min-width: 48em) {
+    section {
+      min-height: calc(100vh - 2.875em); } }
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: calc(-1 * (100px + 20px));
+  visibility: hidden; }
+  @media (min-width: 48em) {
+    a.anchor {
+      top: -3em; } }
+
+.project h3,
+.article h3 {
+  text-align: center; }
+
+h2 span.small,
+h3 span.small {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: #666;
+  font-size: 0.75em; }
+
+a.i-link {
+  font-size: 2em;
+  color: #565d64; }
+  a.i-link:hover {
+    color: #000; }
+
+dt {
+  margin: 0 1em 0 0;
+  float: left;
+  font-style: italic; }
+
+dd {
+  margin: 0 0 1em 0; }
+
+.images {
+  padding: 2em;
+  text-align: center; }
+  .images img {
+    max-width: 100%;
+    height: auto;
+    -webkit-box-shadow: 0px 0px 3em 0.75em rgba(128, 128, 128, 0.15);
+            box-shadow: 0px 0px 3em 0.75em rgba(128, 128, 128, 0.15);
+    margin-bottom: 3em; }
+
+.tags {
+  margin: 3em 0 1em 0;
+  font-style: italic; }
+  .tags span,
+  .tags ul {
+    display: inline; }
+  .tags ul {
+    font-style: normal; }
+  .tags li {
+    display: inline-block; }
+    .tags li:after {
+      content: "|";
+      display: inline-block;
+      padding: 0 5px; }
+    .tags li:last-child:after {
+      content: "";
+      padding: 0; }
+
+.pure-menu-link.is-active {
+  font-weight: bold; }
+
+@media (min-width: 48em) {
+  .pure-menu-horizontal .pure-menu-list,
+  .pure-menu-horizontal .pure-menu-item,
+  .pure-menu-horizontal .pure-menu-heading,
+  .pure-menu-horizontal .pure-menu-separator {
+    display: block; }
+  dl {
+    overflow: auto; }
+  dt {
+    margin: 0;
+    width: 30%; }
+  dd {
+    margin-bottom: inherit;
+    margin-left: 30%; } }
+
+#block-portfolio-local-tasks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  #block-portfolio-local-tasks ul li {
+    width: 100px;
+    border-right: 1px dashed rgba(128, 128, 128, 0.95);
+    padding: 0 10px;
+    text-align: center; }
+    #block-portfolio-local-tasks ul li:last-child {
+      border: 0; }
+
+.project--logo {
+  text-decoration: none; }
+  .project--logo img {
+    height: 100px;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1); }
+  .project--logo:hover img {
+    -webkit-filter: none;
+            filter: none; }
+
+#layout {
+  margin-bottom: 100px; }
+
+/*# sourceMappingURL=app.css.map */

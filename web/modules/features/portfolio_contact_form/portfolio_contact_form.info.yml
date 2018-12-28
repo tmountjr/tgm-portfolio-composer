@@ -1,0 +1,8 @@
+name: 'Contact Form'
+description: 'Contact Form'
+type: module
+core: 8.x
+dependencies:
+  - webform
+version: 8.x-1.0
+package: Portfolio

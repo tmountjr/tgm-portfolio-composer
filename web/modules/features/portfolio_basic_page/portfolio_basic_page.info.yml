@@ -1,0 +1,19 @@
+name: 'Basic Page'
+description: 'Basic Page content type'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - entity_reference_revisions
+  - field
+  - menu_ui
+  - node
+  - paragraphs
+  - path
+  - pathauto
+  - rdf
+  - simple_sitemap
+  - text
+  - user
+version: 8.x-1.1
+package: Portfolio

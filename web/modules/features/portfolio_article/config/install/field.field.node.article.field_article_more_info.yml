@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_more_info
+    - node.type.article
+    - paragraphs.paragraphs_type.cl_link
+  module:
+    - entity_reference_revisions
+id: node.article.field_article_more_info
+field_name: field_article_more_info
+entity_type: node
+bundle: article
+label: 'More Info'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      cl_link: cl_link
+    target_bundles_drag_drop:
+      cl_bodytext:
+        weight: 3
+        enabled: false
+      cl_link:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

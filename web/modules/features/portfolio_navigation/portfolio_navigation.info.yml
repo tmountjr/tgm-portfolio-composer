@@ -1,0 +1,12 @@
+name: Navigation
+description: 'All the navs'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - block_visibility_groups
+  - menu_block
+  - system
+  - term_condition
+version: 8.x-1.1
+package: Portfolio

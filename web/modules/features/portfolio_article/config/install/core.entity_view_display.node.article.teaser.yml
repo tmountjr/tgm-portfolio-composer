@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.field_article_attachments
+    - field.field.node.article.field_article_more_info
+    - field.field.node.article.field_article_subtitle
+    - field.field.node.article.field_article_tags
+    - field.field.node.article.field_shared_body_content
+    - field.field.node.article.field_shared_logo
+    - node.type.article
+  module:
+    - user
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  field_article_subtitle:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_shared_logo:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_article_attachments: true
+  field_article_more_info: true
+  field_article_tags: true
+  field_shared_body_content: true

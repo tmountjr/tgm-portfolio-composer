@@ -1,0 +1,5 @@
+bundle: portfolio
+excluded:
+  - taxonomy.vocabulary.role
+  - taxonomy.vocabulary.technology
+required: true

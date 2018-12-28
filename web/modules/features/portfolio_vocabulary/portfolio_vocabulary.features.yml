@@ -1,0 +1,4 @@
+bundle: portfolio
+excluded:
+  - system.menu.site-menu
+required: true

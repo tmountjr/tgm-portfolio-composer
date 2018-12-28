@@ -1,0 +1,13 @@
+name: Vocabulary
+description: 'All the Vocab'
+type: module
+core: 8.x
+dependencies:
+  - node
+  - rdf
+  - system
+  - taxonomy
+  - user
+  - views
+version: 8.x-1.0
+package: Portfolio

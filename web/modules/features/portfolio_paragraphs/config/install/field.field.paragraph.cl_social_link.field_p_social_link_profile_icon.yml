@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_social_link_profile_icon
+    - paragraphs.paragraphs_type.cl_social_link
+  module:
+    - fontawesome
+id: paragraph.cl_social_link.field_p_social_link_profile_icon
+field_name: field_p_social_link_profile_icon
+entity_type: paragraph
+bundle: cl_social_link
+label: 'Profile Icon'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

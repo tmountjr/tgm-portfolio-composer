@@ -1,0 +1,5 @@
+bundle: portfolio
+excluded:
+  - core.entity_view_display.node.page.default
+  - field.field.node.page.field_shared_body_content
+required: true

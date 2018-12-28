@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.logo.image
+    - media.type.logo
+  module:
+    - image
+id: media.logo.default
+targetEntityType: media
+bundle: logo
+mode: default
+content:
+  image:
+    weight: 0
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

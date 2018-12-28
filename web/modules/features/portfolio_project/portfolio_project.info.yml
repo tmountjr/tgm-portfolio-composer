@@ -1,0 +1,28 @@
+name: Project
+description: 'Provides Project content type and related configuration. Example of previous project work.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - block_visibility_groups
+  - draggableviews
+  - entity_reference_revisions
+  - field
+  - media
+  - media_library
+  - menu_ui
+  - node
+  - paragraphs
+  - path
+  - pathauto
+  - portfolio_media
+  - portfolio_paragraphs
+  - portfolio_shared_field_storage
+  - portfolio_vocabulary
+  - simple_sitemap
+  - taxonomy
+  - term_condition
+  - user
+  - views
+version: 8.x-1.3
+package: Portfolio

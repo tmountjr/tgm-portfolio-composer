@@ -1,0 +1,16 @@
+bundle: portfolio
+excluded:
+  - core.entity_form_display.node.article.default
+  - core.entity_form_display.node.page.default
+  - core.entity_form_display.node.project.default
+  - core.entity_view_display.node.article.default
+  - core.entity_view_display.node.article.teaser
+  - core.entity_view_display.node.page.default
+  - core.entity_view_display.node.project.default
+  - core.entity_view_display.node.project.teaser
+  - field.field.node.article.field_shared_body_content
+  - field.field.node.article.field_shared_logo
+  - field.field.node.page.field_shared_body_content
+  - field.field.node.project.field_shared_logo
+  - media.type.logo
+required: true

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: footer_block
+label: 'Footer Block'
+revision: 0
+description: 'Includes options for social media or other interesting sites visitors may want to look at.'

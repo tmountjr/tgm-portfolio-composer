@@ -1,0 +1,21 @@
+name: Media
+description: 'All Things Media'
+type: module
+core: 8.x
+dependencies:
+  - crop
+  - embed
+  - entity_embed
+  - entity_reference_revisions
+  - field
+  - file
+  - image
+  - media
+  - media_library
+  - paragraphs
+  - path
+  - pathauto
+  - responsive_image
+  - user
+version: 8.x-1.2
+package: Portfolio

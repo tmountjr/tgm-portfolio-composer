@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies: {  }
+name: logo_large_grey
+label: 'Logo Large (Grey)'
+effects:
+  0f8f312f-4ef1-46be-bd19-9a0c00bdf8b8:
+    uuid: 0f8f312f-4ef1-46be-bd19-9a0c00bdf8b8
+    id: image_desaturate
+    weight: 1
+    data: {  }
+  75b75a1c-1d93-4071-866d-b907727b4903:
+    uuid: 75b75a1c-1d93-4071-866d-b907727b4903
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 200
+      upscale: false
