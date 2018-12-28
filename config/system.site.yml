@@ -1,0 +1,14 @@
+uuid: f4ce5e8c-36e3-4db9-a86f-985aab57a89b
+name: tgm-portfolio-composer
+mail: tmountjr@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
