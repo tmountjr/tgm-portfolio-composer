@@ -1,0 +1,8 @@
+version: '3'
+volumes:
+  nfsmount:
+    driver: local
+    driver_opts:
+      type: nfs
+      o: addr=host.docker.internal,rw,nolock,hard,nointr,nfsvers=3,fsc,actimeo=2,tcp
+      device: ":${LANDO_APP_ROOT_BIND}"

@@ -1,0 +1,17 @@
+name: tm-net-composer
+recipe: pantheon
+config:
+  webroot: web
+  drush: composer:~8
+  xdebug: true
+  framework: drupal8
+  site: tgm-portfolio-composer
+  id: d39b35ee-0aae-46aa-b482-792ddcfb9f7e
+  appserver:
+    overrides:
+      services:
+        volumes:
+          - "nfsmount:/app"
+
+compose:
+  - compose.yml
