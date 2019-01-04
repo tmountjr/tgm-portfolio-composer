@@ -1,0 +1,27 @@
+uuid: 306792d0-ddf8-4dc0-b7f0-4acb5d1a68eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cl_block.field_cl_block_block
+    - paragraphs.paragraphs_type.cl_block
+_core:
+  default_config_hash: jE-OtQWcdlN2GoRmujFP8HE_Manc3F1iBaTybwMs0Ko
+id: paragraph.cl_block.default
+targetEntityType: paragraph
+bundle: cl_block
+mode: default
+content:
+  field_cl_block_block:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

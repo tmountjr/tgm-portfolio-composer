@@ -1,0 +1,25 @@
+uuid: 621a82b1-1357-448d-9e25-d652e025d3f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_view_block
+    - node.type.page
+_core:
+  default_config_hash: af8u95MxrluLQuPGqT-R3ap6X-On7qUxblPRek0sZmE
+id: node.page.field_page_view_block
+field_name: field_page_view_block
+entity_type: node
+bundle: page
+label: 'View Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

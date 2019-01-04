@@ -1,0 +1,41 @@
+uuid: ad08830e-93b7-46e6-b261-d2c8107c2658
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.site-menu
+  module:
+    - block_visibility_groups
+    - menu_block
+    - term_condition
+  theme:
+    - portfolio
+_core:
+  default_config_hash: D2V78CL6dVwGKv0W5dhRKGCl8iYt7zd7vM8Nzun9UeA
+id: sitemenu
+theme: portfolio
+region: sidebar_main
+weight: 0
+provider: null
+plugin: 'menu_block:site-menu'
+settings:
+  id: 'menu_block:site-menu'
+  label: 'Site Menu'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand: 0
+  parent: 'site-menu:'
+  suggestion: site_menu
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping: {  }

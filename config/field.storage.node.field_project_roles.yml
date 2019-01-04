@@ -1,0 +1,22 @@
+uuid: 41793bf8-cef3-42ef-901a-d484a6c34989
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: 00tD3ruKsbqoJZlGYeR-VvLXj8UrpME9QN4tyiKKrnE
+id: node.field_project_roles
+field_name: field_project_roles
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

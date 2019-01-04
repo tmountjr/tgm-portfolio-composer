@@ -1,0 +1,11 @@
+uuid: ee6913a3-6727-4e91-b12e-2b013cbc944f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: IHvjF8Pn136RDj8zOw4iElA4PJkD_w2wwoeCViyyAAw
+name: Technology
+vid: technology
+description: 'The technology used in a project.'
+hierarchy: 0
+weight: 0

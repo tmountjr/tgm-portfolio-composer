@@ -1,0 +1,38 @@
+uuid: da6b57b1-98c9-4bef-b6fb-b0d2f138b9ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.view_projects
+  module:
+    - block_visibility_groups
+    - term_condition
+    - views
+  theme:
+    - portfolio
+_core:
+  default_config_hash: vhg7Zw7fxYI6wUI5sdGIf3ucx3qhV7I2W2iukrIgEQM
+id: views_block__view_projects_block_projects
+theme: portfolio
+region: hidden
+weight: 0
+provider: null
+plugin: 'views_block:view_projects-block_projects'
+settings:
+  id: 'views_block:view_projects-block_projects'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping: {  }

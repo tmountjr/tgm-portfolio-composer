@@ -1,0 +1,24 @@
+uuid: d8f9cd3c-1769-4b22-acb6-7aa2d35c2689
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: SRrdQNSKCK6X49JMwbIRik6xNT4miLg5bFyZijPaVBU
+id: projects
+label: Projects
+type: 'canonical_entities:node'
+pattern: '/projects/[node:title]'
+selection_criteria:
+  40e9909c-a358-4b71-b00b-0af5e7f98c8d:
+    id: node_type
+    bundles:
+      project: project
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 40e9909c-a358-4b71-b00b-0af5e7f98c8d
+selection_logic: and
+weight: -9
+relationships: {  }

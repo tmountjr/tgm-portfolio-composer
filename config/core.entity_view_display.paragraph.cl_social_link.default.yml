@@ -1,0 +1,39 @@
+uuid: 1fe5f73c-55f5-4d47-8b6b-1c0205a825ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cl_social_link.field_p_social_link_profile_icon
+    - field.field.paragraph.cl_social_link.field_p_social_link_profile_link
+    - paragraphs.paragraphs_type.cl_social_link
+  module:
+    - fontawesome
+    - link
+_core:
+  default_config_hash: KiWiCWjV0MLLZAAG-XVrKe7ZI6gj0-q9nfPqsEJf0Ms
+id: paragraph.cl_social_link.default
+targetEntityType: paragraph
+bundle: cl_social_link
+mode: default
+content:
+  field_p_social_link_profile_icon:
+    weight: 1
+    label: hidden
+    settings:
+      layers: 0
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  field_p_social_link_profile_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

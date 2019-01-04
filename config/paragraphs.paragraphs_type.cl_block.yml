@@ -1,0 +1,11 @@
+uuid: 28caa718-53c8-43a7-bbb0-7f2feb2a101f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kZmpeU_p6cdsxPkZvgfOLbeC9ozsov4voWLyb4cFcu4
+id: cl_block
+label: Block
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

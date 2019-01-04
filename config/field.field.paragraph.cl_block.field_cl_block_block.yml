@@ -1,0 +1,25 @@
+uuid: bcb8a332-2225-4410-99b2-ff36ee1cbea4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cl_block_block
+    - paragraphs.paragraphs_type.cl_block
+_core:
+  default_config_hash: 32P6QoMGxovKgitCtLHHxxYvVvBUTdgLaOmocfrRu9Y
+id: paragraph.cl_block.field_cl_block_block
+field_name: field_cl_block_block
+entity_type: paragraph
+bundle: cl_block
+label: Block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: 3270a0ca-8e12-4b6d-a9ce-35e25f8bf3c4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OnKTuNi7oSSDZfE7eItaqdM_KR2V09QDtpikYWK4EOw
+id: footer_block
+label: 'Footer Block'
+revision: 0
+description: 'Includes options for social media or other interesting sites visitors may want to look at.'

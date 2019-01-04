@@ -1,0 +1,29 @@
+uuid: 280b1f6d-7bca-433d-81e2-4194fc70716d
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.logo_large_color
+    - image.style.logo_small_color
+  theme:
+    - portfolio
+id: retina_logo_color
+label: 'Retina Logo (Color)'
+image_style_mappings:
+  -
+    breakpoint_id: portfolio.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: logo_large_color
+  -
+    breakpoint_id: portfolio.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: logo_small_color
+  -
+    breakpoint_id: portfolio.narrow
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: logo_large_color
+breakpoint_group: portfolio
+fallback_image_style: logo_small_color

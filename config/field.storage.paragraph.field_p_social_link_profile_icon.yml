@@ -1,0 +1,21 @@
+uuid: fb09af44-e996-413c-9f28-7572bf5af0c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - fontawesome
+    - paragraphs
+_core:
+  default_config_hash: oKja28Vj8hzZsudHOHC9nAnucWIYI6-z-Ic9AmNjpGM
+id: paragraph.field_p_social_link_profile_icon
+field_name: field_p_social_link_profile_icon
+entity_type: paragraph
+type: fontawesome_icon
+settings: {  }
+module: fontawesome
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: dcac1dd4-8819-4807-a3a5-1aecde57eb43
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+_core:
+  default_config_hash: GWUyRTBiBWIV76naw2RT0YAACdmhbR_xmaxutw1zQJg
+id: node.field_project_challenges
+field_name: field_project_challenges
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

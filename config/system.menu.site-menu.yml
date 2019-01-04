@@ -1,0 +1,10 @@
+uuid: d8e11080-cd0b-42dd-9d55-f3e9aa8065a9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gaXlZdbg8baKBhZ320odnUxAekL98YR31mna2NAh9u8
+id: site-menu
+label: 'Site Menu'
+description: ''
+locked: false
