@@ -1,0 +1,42 @@
+uuid: 111840b6-5b99-4087-b084-32a31080e6d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project.field_project_challenges
+    - field.field.node.project.field_project_description
+    - field.field.node.project.field_project_images
+    - field.field.node.project.field_project_roles
+    - field.field.node.project.field_project_technologies_used
+    - field.field.node.project.field_shared_logo
+    - node.type.project
+  module:
+    - user
+_core:
+  default_config_hash: EqLG_x68TCa4gHoERmiDc2aBBgHFzGINHfUt1Fv9rNQ
+id: node.project.teaser
+targetEntityType: node
+bundle: project
+mode: teaser
+content:
+  field_shared_logo:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_project_challenges: true
+  field_project_description: true
+  field_project_images: true
+  field_project_roles: true
+  field_project_technologies_used: true

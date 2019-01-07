@@ -1,0 +1,37 @@
+uuid: 990fbf36-e70a-4733-a424-710922a021ad
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_block:4308602b-20f9-4782-b43a-ffac0734921f'
+  module:
+    - block_content
+    - block_visibility_groups
+    - term_condition
+  theme:
+    - portfolio
+id: primaryfooter_2
+theme: portfolio
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:4308602b-20f9-4782-b43a-ffac0734921f'
+settings:
+  id: 'block_content:4308602b-20f9-4782-b43a-ffac0734921f'
+  label: 'Primary Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping: {  }

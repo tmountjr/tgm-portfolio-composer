@@ -1,0 +1,22 @@
+uuid: 7b55e3ed-460e-466e-a5d5-8b3803956bcf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: g5-1KXIwGFc86WNCVuT-UvqoU-As8TFV3WVWiwp9PMs
+id: node.field_project_technologies_used
+field_name: field_project_technologies_used
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

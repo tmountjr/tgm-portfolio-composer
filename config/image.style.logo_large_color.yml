@@ -1,0 +1,17 @@
+uuid: 52997ea9-93f6-4390-98ee-1d448a19bfbf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8xr8VQ5fCMx2oJYZUS58ymFx-W1FUafNE0s8JDkGDC0
+name: logo_large_color
+label: 'Logo Large (Color)'
+effects:
+  149a1d99-40b6-4393-8529-10fcc18bf696:
+    uuid: 149a1d99-40b6-4393-8529-10fcc18bf696
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 200
+      upscale: false

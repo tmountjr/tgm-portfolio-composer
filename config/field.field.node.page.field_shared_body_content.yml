@@ -1,0 +1,38 @@
+uuid: d8a52f42-f643-4aa0-863f-e5dff3d464a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shared_body_content
+    - node.type.page
+    - paragraphs.paragraphs_type.cl_bodytext
+    - paragraphs.paragraphs_type.cl_link
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Z808joLgCUxLDlammVUG4GXPSwULs8z46JzocKiv9Pw
+id: node.page.field_shared_body_content
+field_name: field_shared_body_content
+entity_type: node
+bundle: page
+label: 'Body Content'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      cl_bodytext: cl_bodytext
+      cl_link: cl_link
+    target_bundles_drag_drop:
+      cl_bodytext:
+        enabled: true
+        weight: 3
+      cl_link:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

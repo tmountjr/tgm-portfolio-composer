@@ -1,0 +1,136 @@
+uuid: 0300578d-9e19-439b-b1c8-978f805d73a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project.field_project_challenges
+    - field.field.node.project.field_project_description
+    - field.field.node.project.field_project_images
+    - field.field.node.project.field_project_roles
+    - field.field.node.project.field_project_technologies_used
+    - field.field.node.project.field_shared_logo
+    - node.type.project
+  module:
+    - media_library
+    - paragraphs
+    - path
+_core:
+  default_config_hash: Bh8HqGQkzlmYZV8HWzXFJseJINFAntopUQn5Tt8KRQo
+id: node.project.default
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_project_challenges:
+    type: entity_reference_paragraphs
+    weight: 127
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_project_description:
+    type: entity_reference_paragraphs
+    weight: 126
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_project_images:
+    type: media_library_widget
+    weight: 128
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_project_roles:
+    weight: 124
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_project_technologies_used:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_shared_logo:
+    weight: 121
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

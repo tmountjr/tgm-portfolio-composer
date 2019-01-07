@@ -1,0 +1,23 @@
+uuid: 9a9ddee8-67af-40e6-a92c-2c1bea96e264
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cl_block.field_cl_block_block
+    - paragraphs.paragraphs_type.cl_block
+_core:
+  default_config_hash: 1BrtH_X2djzuCLCCHcE0dnWgFpceUDL-3X11IJD45Ho
+id: paragraph.cl_block.default
+targetEntityType: paragraph
+bundle: cl_block
+mode: default
+content:
+  field_cl_block_block:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

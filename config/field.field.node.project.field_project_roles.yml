@@ -1,0 +1,31 @@
+uuid: d3002cd5-07a0-46d7-bb15-e2e8e238cdf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_roles
+    - node.type.project
+    - taxonomy.vocabulary.role
+_core:
+  default_config_hash: t2LUMj7-BHwHmupjpC0JqF8h902mWK-yjjI6RjaA20Q
+id: node.project.field_project_roles
+field_name: field_project_roles
+entity_type: node
+bundle: project
+label: Roles
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      role: role
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: f3b2fa87-0b1c-4ccd-afdd-49379a17516b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cl_bodytext_bodytext
+    - paragraphs.paragraphs_type.cl_bodytext
+  module:
+    - text
+_core:
+  default_config_hash: WYD38l17UYnAEozeuZhCv7UrUykGQhfKXy3j4LSRCa8
+id: paragraph.cl_bodytext.field_cl_bodytext_bodytext
+field_name: field_cl_bodytext_bodytext
+entity_type: paragraph
+bundle: cl_bodytext
+label: 'Body Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

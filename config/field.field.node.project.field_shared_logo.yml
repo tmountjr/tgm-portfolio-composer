@@ -1,0 +1,30 @@
+uuid: 9a4f64d5-5070-4e4e-9996-9489e8a65f1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shared_logo
+    - media.type.logo
+    - node.type.project
+_core:
+  default_config_hash: 5smkeCwChtejLcAPHop_e5Th8mCt3j_ZOl91_fQch9I
+id: node.project.field_shared_logo
+field_name: field_shared_logo
+entity_type: node
+bundle: project
+label: Logo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      logo: logo
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,17 @@
+uuid: f0582e6a-6a02-4f4c-a725-e07b722fa5fc
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8v6AdrajEFOafVf0jPb31DR5GYaO0MTCt-_UK0jPc1A
+name: logo_small_color
+label: 'Logo Small (Color)'
+effects:
+  942bcf8e-8b39-4718-b711-a190440a0624:
+    uuid: 942bcf8e-8b39-4718-b711-a190440a0624
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 100
+      upscale: false

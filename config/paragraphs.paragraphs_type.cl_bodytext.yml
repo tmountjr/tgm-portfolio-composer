@@ -1,0 +1,11 @@
+uuid: a67314f2-4465-41cc-850f-360e02a75e1e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5_Gel269lyM0XqE8i5hqGbk2wC6bwrBGkXNs-bK_UEQ
+id: cl_bodytext
+label: 'Body Text'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

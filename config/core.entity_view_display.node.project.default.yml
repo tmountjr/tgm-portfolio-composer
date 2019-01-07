@@ -1,0 +1,80 @@
+uuid: 35c6f818-1626-495c-b13b-38685c9e5c5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project.field_project_challenges
+    - field.field.node.project.field_project_description
+    - field.field.node.project.field_project_images
+    - field.field.node.project.field_project_roles
+    - field.field.node.project.field_project_technologies_used
+    - field.field.node.project.field_shared_logo
+    - node.type.project
+  module:
+    - entity_reference_revisions
+    - user
+_core:
+  default_config_hash: pYFwiJPfe8Vfcpex-CaZf2maC1TZayHht_fWzjj_ClA
+id: node.project.default
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  field_project_challenges:
+    type: entity_reference_revisions_entity_view
+    weight: 107
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_project_description:
+    type: entity_reference_revisions_entity_view
+    weight: 106
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_project_images:
+    type: entity_reference_entity_view
+    weight: 108
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_project_roles:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_project_technologies_used:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_shared_logo:
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

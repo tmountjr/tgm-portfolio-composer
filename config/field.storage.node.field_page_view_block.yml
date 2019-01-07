@@ -1,0 +1,22 @@
+uuid: 005d3c41-f6b5-483c-b8ec-d558570363b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - block
+    - node
+_core:
+  default_config_hash: dm_--qlXlcnhWqlgub376jmTiOVTHIvuxNtukuKGsFM
+id: node.field_page_view_block
+field_name: field_page_view_block
+entity_type: node
+type: entity_reference
+settings:
+  target_type: block
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

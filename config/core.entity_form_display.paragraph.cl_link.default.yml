@@ -1,0 +1,28 @@
+uuid: 751aa335-d534-49a6-b450-5739889cefb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cl_link.field_cl_link_link
+    - paragraphs.paragraphs_type.cl_link
+  module:
+    - link
+_core:
+  default_config_hash: pzNereBYgu8Lqcp_yM7D2ZwZUcHu8XKXNipBXGJZbkA
+id: paragraph.cl_link.default
+targetEntityType: paragraph
+bundle: cl_link
+mode: default
+content:
+  field_cl_link_link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

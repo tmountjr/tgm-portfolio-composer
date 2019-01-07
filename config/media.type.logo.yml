@@ -1,0 +1,19 @@
+uuid: 9e1d546c-2ec2-4204-b359-2667c051f8ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+third_party_settings:
+  crop:
+    image_field: image
+id: logo
+label: Logo
+description: 'A project logo.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: image
+field_map:
+  name: name

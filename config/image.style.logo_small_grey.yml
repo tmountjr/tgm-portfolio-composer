@@ -1,0 +1,22 @@
+uuid: 65beaaf2-cef8-41fe-a38d-ffb554d3e497
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: D8tsz0kN2CCpnTb1aRLFB3y0qCgsV3gsOL0x0i37_Xo
+name: logo_small_grey
+label: 'Logo Small (Grey)'
+effects:
+  c81c9d8f-98b2-4fac-ad7d-58af72333b1c:
+    uuid: c81c9d8f-98b2-4fac-ad7d-58af72333b1c
+    id: image_desaturate
+    weight: 1
+    data: {  }
+  3522e102-7426-4644-8789-e767fe766a29:
+    uuid: 3522e102-7426-4644-8789-e767fe766a29
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 100
+      upscale: false
