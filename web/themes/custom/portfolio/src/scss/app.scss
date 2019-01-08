@@ -276,14 +276,13 @@ dd {
 }
 
 .project--logo {
-  text-decoration: none;
+  @include project_logo();
+}
+
+.project--logo--static {
+  @include project_logo();
 
   img {
-    height: 100px;
-    filter: grayscale(1);
-  }
-
-  &:hover img {
     filter: none;
   }
 }

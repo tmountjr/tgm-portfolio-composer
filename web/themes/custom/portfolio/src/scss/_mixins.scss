@@ -3,3 +3,16 @@
     @content
   }
 }
+
+@mixin project_logo() {
+  text-decoration: none;
+
+  img {
+    height: 100px;
+    filter: grayscale(1);
+  }
+
+  &:hover img {
+    filter: none;
+  }
+}
