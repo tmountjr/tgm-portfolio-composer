@@ -43,10 +43,8 @@
     label_display == 'visually_hidden' ? 'visually-hidden',
   ]
 %}
-
-<p>For more information, see the following:</p>
-
-{% for item in items %}
-  {# Essentially this foreach amounts to "for each paragraph" #}
-  {{ item.content }}
-{% endfor %}
+<ul{{ attributes }}>
+  {% for item in items %}
+    <li{{ item.attributes.addClass('article-link') }}>{{ item.content }}</li>
+  {% endfor %}
+</ul>
