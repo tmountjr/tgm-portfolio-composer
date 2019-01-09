@@ -196,19 +196,11 @@ dd {
   .project--logo:hover img {
     -webkit-filter: none;
             filter: none; }
-
-.project--logo--static {
-  text-decoration: none; }
-  .project--logo--static img {
-    height: 100px;
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1); }
-  .project--logo--static:hover img {
-    -webkit-filter: none;
-            filter: none; }
   .project--logo--static img {
     -webkit-filter: none;
             filter: none; }
+  .project--logo--centered {
+    text-align: center; }
 
 #layout {
   margin-bottom: 100px; }

@@ -81,39 +81,18 @@
   {{ title_suffix }}
 
   <section class="article fullpage">
-    <span class="project--logo">
+    <span class="project--logo project--logo--static project--logo--centered">
       {{ content.field_shared_logo }}
     </span>
-    <h2>
+    <h2 {{title_attributes }}>
       {{ simple_title }}
       <span class="small">{{ simple_subtitle }}</span>
     </h2>
+    {{ content.field_shared_body_content }}
+
+    {% if content.field_article_more_info|render %}
+      {{ content.field_article_more_info }}
+    {% endif %}
   </section>
 
 </div>
-
-{# <article{{ attributes }}>
-
-  {{ title_prefix }}
-  {% if not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
-
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
-
-  <div{{ content_attributes }}>
-    {{ content }}
-  </div>
-
-</article> #}
