@@ -217,6 +217,7 @@ dd {
 
   li {
     display: inline-block;
+    text-transform: lowercase;
 
     &:after {
       content: "|";
@@ -276,15 +277,16 @@ dd {
 }
 
 .project--logo {
-  text-decoration: none;
+  @include project_logo();
 
-  img {
-    height: 100px;
-    filter: grayscale(1);
+  &--static {
+    img {
+      filter: none;
+    }
   }
 
-  &:hover img {
-    filter: none;
+  &--centered {
+    text-align: center;
   }
 }
 

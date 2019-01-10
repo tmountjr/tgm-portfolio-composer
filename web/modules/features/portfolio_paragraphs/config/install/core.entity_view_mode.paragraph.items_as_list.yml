@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.items_as_list
+label: 'Items As List'
+targetEntityType: paragraph
+cache: true

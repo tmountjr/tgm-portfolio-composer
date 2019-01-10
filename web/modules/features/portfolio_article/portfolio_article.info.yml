@@ -5,6 +5,7 @@ core: 8.x
 dependencies:
   - block
   - block_visibility_groups
+  - disqus
   - draggableviews
   - entity_reference_revisions
   - field
@@ -24,5 +25,5 @@ dependencies:
   - term_condition
   - user
   - views
-version: 8.x-1.4
+version: 8.x-1.6
 package: Portfolio

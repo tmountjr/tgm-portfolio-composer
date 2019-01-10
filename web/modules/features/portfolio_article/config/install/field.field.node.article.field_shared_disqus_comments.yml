@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shared_disqus_comments
+    - node.type.article
+  module:
+    - disqus
+id: node.article.field_shared_disqus_comments
+field_name: field_shared_disqus_comments
+entity_type: node
+bundle: article
+label: Comments
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 1
+    identifier: ''
+default_value_callback: ''
+settings: {  }
+field_type: disqus_comment

@@ -1,0 +1,28 @@
+uuid: f8426416-fd10-4382-98c1-e730d8d4c842
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.items_as_list
+    - field.field.paragraph.cl_link.field_cl_link_link
+    - paragraphs.paragraphs_type.cl_link
+  module:
+    - link
+id: paragraph.cl_link.items_as_list
+targetEntityType: paragraph
+bundle: cl_link
+mode: items_as_list
+content:
+  field_cl_link_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: null
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

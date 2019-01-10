@@ -4,6 +4,7 @@ type: module
 core: 8.x
 dependencies:
   - crop
+  - disqus
   - entity_reference_revisions
   - field
   - media
@@ -12,5 +13,5 @@ dependencies:
   - paragraphs
   - path
   - user
-version: 8.x-1.0
+version: 8.x-1.1
 package: Portfolio

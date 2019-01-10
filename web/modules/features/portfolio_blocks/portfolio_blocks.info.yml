@@ -6,10 +6,13 @@ dependencies:
   - block
   - block_content
   - block_visibility_groups
+  - ctools
   - entity_reference_revisions
   - field
+  - node
   - paragraphs
+  - portfolio_paragraphs
   - system
   - term_condition
-version: 8.x-1.0
+version: 8.x-1.2
 package: Portfolio

@@ -1,10 +1,7 @@
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:footer_block:92067f0b-5584-47ff-87f0-dc02bdd17577'
   module:
-    - block_content
     - block_visibility_groups
     - term_condition
   theme:
