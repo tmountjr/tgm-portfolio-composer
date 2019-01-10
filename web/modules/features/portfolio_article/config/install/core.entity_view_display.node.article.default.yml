@@ -7,9 +7,11 @@ dependencies:
     - field.field.node.article.field_article_subtitle
     - field.field.node.article.field_article_tags
     - field.field.node.article.field_shared_body_content
+    - field.field.node.article.field_shared_disqus_comments
     - field.field.node.article.field_shared_logo
     - node.type.article
   module:
+    - disqus
     - entity_reference_revisions
     - user
 id: node.article.default
@@ -59,6 +61,13 @@ content:
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
+    region: content
+  field_shared_disqus_comments:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: disqus_comment
     region: content
   field_shared_logo:
     type: entity_reference_entity_view
