@@ -148,7 +148,8 @@ dd {
   .tags ul {
     font-style: normal; }
   .tags li {
-    display: inline-block; }
+    display: inline-block;
+    text-transform: lowercase; }
     .tags li:after {
       content: "|";
       display: inline-block;

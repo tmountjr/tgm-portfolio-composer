@@ -217,6 +217,7 @@ dd {
 
   li {
     display: inline-block;
+    text-transform: lowercase;
 
     &:after {
       content: "|";
