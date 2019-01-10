@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: bvg_articles
+label: Articles
+logic: and
+conditions:
+  59e10f7e-4390-467e-85a0-2370b3221f08:
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 59e10f7e-4390-467e-85a0-2370b3221f08
+allow_other_conditions: true
