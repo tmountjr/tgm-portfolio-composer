@@ -1,0 +1,10 @@
+uuid: f5a6ca1a-4bd2-494c-9a94-0d9f755c2eea
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.items_as_separated_list
+label: 'Items As Separated List'
+targetEntityType: paragraph
+cache: true

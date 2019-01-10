@@ -9,9 +9,10 @@ dependencies:
   - ctools
   - entity_reference_revisions
   - field
+  - node
   - paragraphs
   - portfolio_paragraphs
   - system
   - term_condition
-version: 8.x-1.1
+version: 8.x-1.2
 package: Portfolio
