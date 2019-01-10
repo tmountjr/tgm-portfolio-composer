@@ -1,0 +1,17 @@
+disqus_domain: tommount-net
+behavior:
+  disqus_localization: false
+  disqus_inherit_login: false
+  disqus_disable_mobile: false
+  disqus_track_newcomment_ga: false
+advanced:
+  disqus_useraccesstoken: ''
+  disqus_publickey: ''
+  disqus_secretkey: ''
+  sso:
+    disqus_sso: false
+    disqus_use_site_logo: false
+    disqus_logo: ''
+  api:
+    disqus_api_update: false
+    disqus_api_delete: ''
