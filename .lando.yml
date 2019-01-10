@@ -2,7 +2,7 @@ name: tm-net-composer
 recipe: pantheon
 config:
   webroot: web
-  drush: composer:~8
+  drush: global:8.1.16
   xdebug: true
   framework: drupal8
   site: tgm-portfolio-composer
@@ -15,3 +15,10 @@ config:
 
 compose:
   - compose.yml
+
+tooling:
+  drush:
+    service: appserver
+    cmd:
+      - "drush"
+      - "--root=/app/web"

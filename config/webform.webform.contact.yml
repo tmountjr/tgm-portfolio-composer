@@ -1,12 +1,9 @@
-uuid: f15672ac-b941-4ac9-8311-3de36a69a117
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform
-_core:
-  default_config_hash: B-E6t3OGPrgG1OPuVOmoXmjWLXkta_R-lSr_ppfU2Ww
 open: null
 close: null
 weight: 0
@@ -34,6 +31,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
+  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -166,6 +164,10 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers:
   email_confirmation:
     id: email
@@ -235,3 +237,6 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
+uuid: f15672ac-b941-4ac9-8311-3de36a69a117
+_core:
+  default_config_hash: B-E6t3OGPrgG1OPuVOmoXmjWLXkta_R-lSr_ppfU2Ww
