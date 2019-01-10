@@ -101,6 +101,12 @@
     {% if content.field_article_tags|render %}
       {{ content.field_article_tags }}
     {% endif %}
+
+    {% if content.field_shared_disqus_comments|render %}
+      <div id="disqus_thread">
+        {{ content.field_shared_disqus_comments }}
+      </div>
+    {% endif %}
   </section>
 
 </div>
