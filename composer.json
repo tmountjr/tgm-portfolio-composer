@@ -83,7 +83,6 @@
         "drupal/views_infinite_scroll": "1.5",
         "drupal/webform": "5.1",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
-        "drush/drush": "~8",
         "enyo/dropzone": "5.5.0",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
