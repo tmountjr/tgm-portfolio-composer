@@ -11,5 +11,5 @@ dependencies:
   - paragraphs
   - text
   - user
-version: 8.x-1.1
+version: 8.x-1.2
 package: Portfolio
