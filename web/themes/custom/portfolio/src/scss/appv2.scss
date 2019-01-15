@@ -172,3 +172,27 @@ nav {
   text-align: center;
   color: $sidebar-text-color;
 }
+
+/**
+ * Begin styles specific to article teaser.
+ */
+.project--logo {
+  @include project-logo();
+
+  &--static {
+    img {
+      filter: none;
+    }
+  }
+
+  &--centered {
+    text-align: center;
+  }
+}
+
+.article {
+  &--teaser {
+    padding: 1rem 0;
+    text-align: center;
+  }
+}

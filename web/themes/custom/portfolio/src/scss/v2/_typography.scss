@@ -5,3 +5,10 @@ body {
   font-family: "Martel Sans", Ariel, sans-serif;
   font-weight: 400;
 }
+
+h2,
+h3 {
+  span.small {
+    @include subtitle();
+  }
+}

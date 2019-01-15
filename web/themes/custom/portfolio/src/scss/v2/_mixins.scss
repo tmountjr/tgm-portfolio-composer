@@ -60,3 +60,28 @@
 @mixin left-space() {
   padding-left: 0.5rem;
 }
+
+@mixin project-logo() {
+  text-decoration: none;
+
+  img {
+    height: 100px;
+    filter: grayscale(1);
+  }
+
+  &:hover img {
+    filter: none;
+  }
+}
+
+@mixin interior-title {
+  text-align: center;
+}
+
+@mixin subtitle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875rem;
+  color: $subtitle-text-color;
+}

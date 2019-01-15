@@ -4,6 +4,14 @@ body {
   font-family: "Martel Sans", Ariel, sans-serif;
   font-weight: 400; }
 
+h2 span.small,
+h3 span.small {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875rem;
+  color: #666666; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -560,5 +568,27 @@ nav {
   width: 100%;
   text-align: center;
   color: #777777; }
+
+/**
+ * Begin styles specific to article teaser.
+ */
+.project--logo {
+  text-decoration: none; }
+  .project--logo img {
+    height: 100px;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1); }
+  .project--logo:hover img {
+    -webkit-filter: none;
+            filter: none; }
+  .project--logo--static img {
+    -webkit-filter: none;
+            filter: none; }
+  .project--logo--centered {
+    text-align: center; }
+
+.article--teaser {
+  padding: 1rem 0;
+  text-align: center; }
 
 /*# sourceMappingURL=appv2.css.map */
