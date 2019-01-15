@@ -1,0 +1,174 @@
+@import 'v2/vars';
+@import 'v2/mixins';
+@import 'v2/typography';
+
+@import 'vendor/normalize';
+
+html,
+body {
+  height: 100%;
+  background-color: $background-color;
+}
+
+.outer-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-wrapper {
+  padding: 1rem;
+
+  @include desktop() {
+    padding: 0 1rem;
+  }
+}
+
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @include desktop() {
+    flex-direction: row;
+    height: $content-height;
+  }
+}
+
+.sidebar {
+  background-color: $sidebar-color;
+
+  .inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  @include desktop() {
+    @include top-space();
+    width: $sidebar-width;
+    flex: 1 0 auto;
+    background-color: $sidebar-color;
+    color: $sidebar-text-color;
+
+    .inner-wrapper {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.main {
+  @include desktop() {
+    @include fadeout(5%, $content-width);
+    @include top-space();
+    width: $content-width;
+    overflow-y: auto;
+  }
+}
+
+.brand {
+  text-decoration: none;
+  color: $logo-text-color;
+}
+
+.logo {
+  width: 100px;
+  color: $logo-text-color;
+  flex: 1 0 auto;
+
+  .first-name {
+    font-weight: 200;
+  }
+
+  .last-name {
+    font-weight: 900;
+  }
+
+  @include desktop() {
+    @include left-space();
+  }
+}
+
+nav {
+  @include flexlist();
+  overflow: auto;
+
+  li {
+    &:hover {
+      background-color: $link-hover-color;
+    }
+
+    a.is-active {
+      font-weight: bold;
+    }
+  }
+
+  a {
+    @include left-space();
+    text-decoration: none;
+    color: $sidebar-text-color;
+  }
+
+  @include desktop() {
+    li {
+      height: 50px;
+      width: 100%;
+    }
+  }
+}
+
+.footer {
+  @include flexlist();
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  background-color: $sidebar-color;
+  height: 100px;
+  flex: 1 0 auto;
+
+  ul {
+    height: 50px;
+  }
+
+  li {
+    width: 60px;
+    padding: 0 0.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $logo-text-color;
+    font-size: 2rem;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  @include desktop() {
+    background: linear-gradient(to right,
+      $sidebar-color 0%,
+      $sidebar-color $sidebar-width,
+      $background-color $sidebar-width,
+      $background-color 100%);
+    display: flex;
+    padding-left: $sidebar-width;
+    justify-content: center;
+
+    li {
+      justify-content: center;
+    }
+  }
+}
+
+.copyright {
+  font-size: 0.75rem;
+  width: 100%;
+  text-align: center;
+  color: $sidebar-text-color;
+}

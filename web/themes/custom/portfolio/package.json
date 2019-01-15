@@ -43,5 +43,8 @@
   },
   "default": {
     "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

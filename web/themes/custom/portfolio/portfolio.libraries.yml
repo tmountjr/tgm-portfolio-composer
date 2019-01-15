@@ -20,20 +20,20 @@ portfolio.fonts:
         type: external
         minified: true
 
-portfolio.pure:
-  remote: https://purecss.io
-  version: 0.6.0
-  license:
-    name: BSD
-    url: https://github.com/pure-css/pure-site/blob/master/LICENSE.md
-  css:
-    theme:
-      '//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css':
-        type: external
-        minified: true
-      '//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css':
-        type: external
-        minified: true
+# portfolio.pure:
+#   remote: https://purecss.io
+#   version: 0.6.0
+#   license:
+#     name: BSD
+#     url: https://github.com/pure-css/pure-site/blob/master/LICENSE.md
+#   css:
+#     theme:
+#       '//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css':
+#         type: external
+#         minified: true
+#       '//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css':
+#         type: external
+#         minified: true
 
 portfolio.fontawesome:
   remote: http://fontawesome.io
@@ -49,4 +49,4 @@ portfolio.fontawesome:
 portfolio.custom:
   css:
     theme:
-      css/app.css: {}
+      css/appv2.css: {}

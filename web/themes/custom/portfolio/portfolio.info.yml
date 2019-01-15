@@ -10,7 +10,7 @@ base theme: stark
 libraries:
   - portfolio/portfolio.modernizr
   - portfolio/portfolio.fonts
-  - portfolio/portfolio.pure
+  # - portfolio/portfolio.pure
   - portfolio/portfolio.fontawesome
   - portfolio/portfolio.custom
 

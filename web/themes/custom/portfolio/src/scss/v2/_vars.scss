@@ -1,0 +1,13 @@
+// Colors
+$background-color: rgb(255, 255, 255);
+$sidebar-color: rgb(245, 245, 245);
+$sidebar-text-color: rgb(119, 119, 119);
+$logo-text-color: rgb(86, 93, 100);
+$link-hover-color: darken($sidebar-color, 5%);
+
+// Dimensions
+$sidebar-width: 25%;
+$footer-height: 100px;
+$content-width: calc(100% - #{$sidebar-width});
+$content-height: calc(100% - #{$footer-height});
+$menu-item-width: 150px;
