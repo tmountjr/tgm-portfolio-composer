@@ -362,26 +362,30 @@ body {
     .content a:visited {
       color: #100d65; }
   .content .tags {
-    margin: 3rem 0 1rem 0;
-    font-style: italic; }
-    .content .tags span,
-    .content .tags ul {
-      display: inline; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-style: italic;
+    margin: 3em 0 1em 0; }
     .content .tags ul {
       margin: 0;
       padding: 0;
       list-style-type: none;
-      font-style: normal; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
     .content .tags li {
-      display: inline-block;
+      padding: 0 10px;
+      border-right: 1px solid #000000;
+      font-style: normal;
       text-transform: lowercase; }
-      .content .tags li:after {
-        content: "|";
-        display: inline-block;
-        padding: 0 5px; }
-      .content .tags li:last-child:after {
-        content: "";
-        padding: 0; }
+      .content .tags li:last-child {
+        padding-right: 0;
+        border-right: none; }
   @media (min-width: 1024px) {
     .content {
       -webkit-box-orient: horizontal;

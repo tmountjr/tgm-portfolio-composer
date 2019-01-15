@@ -37,32 +37,25 @@ body {
   );
 
   .tags {
-    margin: 3rem 0 1rem 0;
+    display: flex;
     font-style: italic;
-
-    span,
-    ul {
-      display: inline;
-    }
+    margin: 3em 0 1em 0;
 
     ul {
       @include list-reset();
-      font-style: normal;
+      display: flex;
+      flex-direction: row;
     }
 
     li {
-      display: inline-block;
+      padding: 0 10px;
+      border-right: 1px solid #000000;
+      font-style: normal;
       text-transform: lowercase;
 
-      &:after {
-        content: "|";
-        display: inline-block;
-        padding: 0 5px;
-      }
-
-      &:last-child:after {
-        content: "";
-        padding: 0;
+      &:last-child {
+        padding-right: 0;
+        border-right: none;
       }
     }
   }
