@@ -344,14 +344,14 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  height: calc(100vh - 100px); }
   @media (min-width: 1024px) {
     .content {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row;
-      height: calc(100% - 100px); } }
+              flex-direction: row; } }
 
 .sidebar {
   background-color: whitesmoke; }
