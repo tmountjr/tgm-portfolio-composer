@@ -501,14 +501,26 @@ nav {
                 justify-content: normal; } }
   nav::-webkit-scrollbar {
     display: none; }
-  nav li:hover {
-    background-color: #e8e8e8; }
-  nav li a.is-active {
-    font-weight: bold; }
+  nav li {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    nav li:hover {
+      background-color: #e8e8e8; }
+    nav li a.is-active {
+      font-weight: bold; }
   nav a {
     padding-left: 0.5rem;
     text-decoration: none;
-    color: #777777; }
+    color: #777777;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
   @media (min-width: 1024px) {
     nav li {
       height: 50px;

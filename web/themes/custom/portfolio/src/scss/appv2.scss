@@ -131,6 +131,8 @@ nav {
   overflow: auto;
 
   li {
+    align-items: stretch;
+
     &:hover {
       background-color: $sidebar-link-hover-color;
     }
@@ -144,6 +146,9 @@ nav {
     @include left-space();
     text-decoration: none;
     color: $sidebar-text-color;
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
   }
 
   @include desktop() {
