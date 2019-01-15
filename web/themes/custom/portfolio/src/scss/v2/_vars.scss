@@ -4,7 +4,10 @@ $sidebar-color: rgb(245, 245, 245);
 $sidebar-text-color: rgb(119, 119, 119);
 $subtitle-text-color: rgb(102, 102, 102);
 $logo-text-color: rgb(86, 93, 100);
-$link-hover-color: darken($sidebar-color, 5%);
+$sidebar-link-hover-color: darken($sidebar-color, 5%);
+$link-text-color--unvisited: rgb(175, 108, 11);
+$link-text-color--hover: rgb(107, 63, 0);
+$link-text-color--visited: rgb(16, 13, 101);
 
 // Dimensions
 $sidebar-width: 25%;
