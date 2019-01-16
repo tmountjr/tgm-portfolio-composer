@@ -79,14 +79,53 @@
   {{ title_prefix }}
   {{ title_suffix }}
 
-  <div{{ content_attributes }}>
-    <div class="project teaser">
-      <h3>
-        <a class="project--logo" href="{{ url }}"  title="{{ simple_title }}">
-          {{ content.field_shared_logo }}
-        </a>
-      </h3>
-    </div>
-  </div>
+  <section class="project fullpage">
+    <span class="project--logo project--logo--static project--logo--centered">
+      {{ content.field_shared_logo }}
+    </span>
+    <h2 {{title_attributes }}>
+      {{ simple_title }}
+    </h2>
+
+    {% if content.field_project_roles|render %}
+      {{ content.field_project_roles }}
+    {% endif %}
+
+    {% if content.field_project_technologies_used|render %}
+      {{ content.field_project_technologies_used }}
+    {% endif %}
+
+    {% if content.field_project_description|render %}
+      {{ content.field_project_description }}
+    {% endif %}
+
+    {% if content.field_project_challenges|render %}
+      {{ content.field_project_challenges }}
+    {% endif %}
+
+    {% if content.field_project_images|render %}
+      {{ content.field_project_images }}
+    {% endif %}
+
+    {# {{ content.field_shared_body_content }}
+
+    {% if content.field_article_more_info|render %}
+      {{ content.field_article_more_info }}
+    {% endif %}
+
+    {% if content.field_article_attachments|render %}
+      {{ content.field_article_attachments }}
+    {% endif %}
+
+    {% if content.field_article_tags|render %}
+      {{ content.field_article_tags }}
+    {% endif %} #}
+
+    {% if content.field_shared_disqus_comments|render %}
+      <div id="disqus_thread">
+        {{ content.field_shared_disqus_comments }}
+      </div>
+    {% endif %}
+  </section>
 
 </div>

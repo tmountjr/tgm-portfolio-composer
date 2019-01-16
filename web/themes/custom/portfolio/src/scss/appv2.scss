@@ -10,6 +10,22 @@ body {
   background-color: $background-color;
 }
 
+#block-portfolio-local-tasks ul {
+  @include list-reset();
+  display: flex;
+
+  li {
+    width: 100px;
+    border-right: 1px dashed rgba(128, 128, 128, 0.95);
+    padding: 0 10px;
+    text-align: center;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+}
+
 .outer-wrapper {
   height: 100vh;
   display: flex;
@@ -214,26 +230,46 @@ nav {
   color: $sidebar-text-color;
 }
 
-/**
- * Begin styles specific to article teaser.
- */
-.project--logo {
-  @include project-logo();
+.teaser {
+  padding: 1rem 0;
+  text-align: center;
+}
 
-  &--static {
-    img {
-      filter: none;
+.project {
+  &--logo {
+    @include project-logo();
+
+    &--static {
+      img {
+        filter: none;
+      }
+    }
+
+    &--centered {
+      text-align: center;
     }
   }
 
-  &--centered {
-    text-align: center;
-  }
-}
+  &__component {
+    display: flex;
+    margin-bottom: 1em;
 
-.article {
-  &--teaser {
-    padding: 1rem 0;
-    text-align: center;
+    &--title {
+      font-style: italic;
+      padding-right: 1em;
+
+      @include desktop() {
+        padding: 0;
+        flex: 1 0 20%;
+      }
+    }
+
+    &--items {
+      display: flex;
+
+      @include desktop() {
+        flex: 1 0 80%;
+      }
+    }
   }
 }

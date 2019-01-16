@@ -327,6 +327,21 @@ body {
   height: 100%;
   background-color: white; }
 
+#block-portfolio-local-tasks ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  #block-portfolio-local-tasks ul li {
+    width: 100px;
+    border-right: 1px dashed rgba(128, 128, 128, 0.95);
+    padding: 0 10px;
+    text-align: center; }
+    #block-portfolio-local-tasks ul li:last-child {
+      border: 0; }
+
 .outer-wrapper {
   height: 100vh;
   display: -webkit-box;
@@ -619,13 +634,15 @@ nav {
   text-align: center;
   color: #777777; }
 
-/**
- * Begin styles specific to article teaser.
- */
+.teaser {
+  padding: 1rem 0;
+  text-align: center; }
+
 .project--logo {
   text-decoration: none; }
   .project--logo img {
     height: 100px;
+    width: auto;
     -webkit-filter: grayscale(1);
             filter: grayscale(1); }
   .project--logo:hover img {
@@ -637,8 +654,28 @@ nav {
   .project--logo--centered {
     text-align: center; }
 
-.article--teaser {
-  padding: 1rem 0;
-  text-align: center; }
+.project__component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1em; }
+  .project__component--title {
+    font-style: italic;
+    padding-right: 1em; }
+    @media (min-width: 1024px) {
+      .project__component--title {
+        padding: 0;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 20%;
+                flex: 1 0 20%; } }
+  .project__component--items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (min-width: 1024px) {
+      .project__component--items {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 80%;
+                flex: 1 0 80%; } }
 
 /*# sourceMappingURL=appv2.css.map */
